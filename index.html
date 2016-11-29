@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nonstop Color</title>
+	<link rel="shortcut icon" href="NC.jpeg"/>
+	<meta name="viewport" content="width = device - width, initial-scale = 1.0">
+</head>
+<body id="body">
+<script type="text/javascript">
+	setInterval (function(){
+		var hex = Array("0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F");
+		var r = hex[Math.floor(Math.random() * hex.length + 0)] + hex[Math.floor(Math.random() * hex.length + 0)];
+		var g = hex[Math.floor(Math.random() * hex.length + 0)] + hex[Math.floor(Math.random() * hex.length + 0)];
+		var b = hex[Math.floor(Math.random() * hex.length + 0)] + hex[Math.floor(Math.random() * hex.length + 0)];
+		var color = "#"+r+g+b;
+    	document.getElementById("body").style = "transition: 190ms";
+    	document.getElementById("body").style.background = color;
+	}, 200);
+</script>
+</body>
+</html>
