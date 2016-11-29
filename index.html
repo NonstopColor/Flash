@@ -5,6 +5,21 @@
 	<link rel="shortcut icon" href="NC.jpeg"/>
 	<meta name="viewport" content="width = device - width, initial-scale = 1.0">
 </head>
+<style type="text/css">
+	body{
+		font-size: 90px;
+		text-align: center;
+		margin: 0;
+		margin-top: 20px;
+		padding: 0;
+	}
+	@media screen and (max-width: 380px){
+		body{
+			font-size: 60px;
+		}
+	}
+
+</style>
 <body id="body">
 <script type="text/javascript">
 	setInterval (function(){
@@ -15,6 +30,9 @@
 		var color = "#"+r+g+b;
     	document.getElementById("body").style = "transition: 190ms";
     	document.getElementById("body").style.background = color;
+    	document.getElementById("body").style.color = "#505050";
+    	document.getElementById("body").style.opacity = ".15	";
+    	document.getElementById("body").innerHTML = color;
 	}, 200);
 </script>
 </body>
